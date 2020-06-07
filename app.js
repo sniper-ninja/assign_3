@@ -27,13 +27,6 @@
   // There is no function needed here
   function FoundItemsDirectiveController() {
     var fidCntrl = this;
-
-    // // for deb
-    // fidCntrl.testFn = function() {
-    //   console.log("fidCntrl", fidCntrl);
-    //   return 1;
-    // }
-
   }
 
   // controller
