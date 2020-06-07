@@ -1,0 +1,27 @@
+<div>
+  <br />  
+  <h3>Number of items found: {{fidCntrl.items.length}}</h2>
+</div>
+</div>
+<div class=bs-example data-example-id=condensed-table>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Short Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in fidCntrl.items">
+                    <th scope=row>{{item.name}}</th>
+                    <td>{{item.short_name}}</td>
+                    <td>{{item.description}}</td>
+                    <td>
+                      <button type="button" class="btn btn-warning"
+                        ng-click="fidCntrl.onRemove({index: $index})">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</div>
